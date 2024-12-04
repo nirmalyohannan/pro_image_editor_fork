@@ -253,17 +253,17 @@ class _DefaultEmojiPickerViewState extends State<ProEmojiPickerView>
             child: Column(
               children: [
                 // Category view or bottom search bar
-                widget.config.swapCategoryAndBottomBar
-                    ? _buildSearchBar()
-                    : _buildCategoryView(),
+                // widget.config.swapCategoryAndBottomBar
+                //     ? _buildSearchBar()
+                //     : _buildCategoryView(),
 
                 // Emoji view
                 _buildEmojiView(),
 
                 // Bottom Search Bar or Category view
-                widget.config.swapCategoryAndBottomBar
-                    ? _buildCategoryView()
-                    : _buildSearchBar(),
+                // widget.config.swapCategoryAndBottomBar
+                //     ? _buildCategoryView()
+                //     : _buildSearchBar(),
               ],
             ),
           );

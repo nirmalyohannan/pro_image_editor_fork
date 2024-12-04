@@ -43,14 +43,14 @@ class WhatsAppCategoryViewState extends State<EmojiEditorCategoryView>
   }
 
   Widget _buildBackspaceButton() {
-    if (widget.config.categoryViewConfig.showBackspaceButton) {
-      return BackspaceButton(
-        widget.config,
-        widget.state.onBackspacePressed,
-        widget.state.onBackspaceLongPressed,
-        widget.config.categoryViewConfig.backspaceColor,
-      );
-    }
-    return const SizedBox.shrink();
+    // if (widget.config.categoryViewConfig.showBackspaceButton) {
+    return BackspaceButton(
+      widget.config,
+      widget.state.onBackspacePressed,
+      widget.state.onBackspaceLongPressed,
+      widget.config.categoryViewConfig.backspaceColor,
+    );
+    // }
+    // return const SizedBox.shrink();
   }
 }
